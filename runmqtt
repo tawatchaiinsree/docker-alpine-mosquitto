@@ -1,0 +1,1 @@
+sudo docker run --restart=always --name mosquitto -it -p 6204:9412 -p 6203:7412 -v $PWD/mosquitto.conf:/mosquitto/config/mosquitto.conf -v $PWD/certs:/mosquitto/certs -v $PWD/password_file:/mosquitto/config/password_file eclipse-mosquitto:1.5.8
